@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://loongbsd.bitmoe.org/2024/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://loongbsd.bitmoe.org/2024/loongbsd/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://loongbsd.bitmoe.org/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</loc>
     <lastmod>2024-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loongbsd.bitmoe.org/author/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://loongbsd.bitmoe.org/</loc>
     <lastmod>2024-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loongbsd.bitmoe.org/author/mateusz-piotrowski/</loc>
@@ -29,20 +35,14 @@
     <loc>https://loongbsd.bitmoe.org/2024/eurobsdcon/</loc>
     <lastmod>2024-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://loongbsd.bitmoe.org/2024/bsdcan/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://loongbsd.bitmoe.org/2024/bsdcan/norris_quiz/</loc>
+    <loc>https://loongbsd.bitmoe.org/2024/loongbsd/norris_quiz/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loongbsd.bitmoe.org/author/rob-norris/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://loongbsd.bitmoe.org/2024/bsdcan/norris_openzfs-fsync-zil/</loc>
+    <loc>https://loongbsd.bitmoe.org/2024/loongbsd/norris_openzfs-fsync-zil/</loc>
     <lastmod>2024-05-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loongbsd.bitmoe.org/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
@@ -79,9 +79,6 @@
   </url><url>
     <loc>https://loongbsd.bitmoe.org/2024/asiabsdcon/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://loongbsd.bitmoe.org/2024/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://loongbsd.bitmoe.org/1995/</loc>
     <lastmod>1995-12-01T00:00:00+00:00</lastmod>

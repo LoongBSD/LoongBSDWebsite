@@ -6,14 +6,7 @@
     <description>Recent content in 2024 on LoongBSD Group Messages</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="https://loongbsd.bitmoe.org/2024/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Demon w trampkach, czyli pełne zanurzenie w ekosystem FreeBSD</title>
-      <link>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</link>
-      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</guid>
-      <description>&lt;p&gt;FreeBSD jest systemem operacyjnym wywodzącym się w prostej linii z legendarnego&#xA;systemu Unix i jest kontynuacją projektu BSD (pierwszego otwartego systemu&#xA;operacyjnego w historii). W ciągu ponad 30 lat swojego istnienia projekt&#xA;FreeBSD nie tylko rozwiną się technologicznie, ale również wypracował kulturę,&#xA;procesy i struktury, które scalają społeczność i pozwalają na sprawne&#xA;funkcjonowanie projektu tworzonego przez tysiące osób z całego świata.&lt;/p&gt;&#xA;&lt;p&gt;Podczas prelekcji poznamy odpowiedzi na kilka podstawowych pytań ze świata&#xA;FreeBSD. Kto jest kim i jak zostać kimś? Co jest czym i jak się czymś zająć?&#xA;Innymi słowy, skupimy się na takich rzeczach, jak:&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

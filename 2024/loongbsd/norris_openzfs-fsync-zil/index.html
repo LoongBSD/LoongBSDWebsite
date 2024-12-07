@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Sheng-Yi Hong :: LoongBSD Group Messages</title>
+    <title>Why fsync() on OpenZFS can’t fail, and what happens when it does :: LoongBSD Group Messages</title>
 
     
     <link href="/css/nucleus.css?1733575531" rel="stylesheet">
@@ -37,7 +37,7 @@
 <link href="/css/papers-custom.css?1733575531" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/author/sheng-yi-hong/">
+  <body class="" data-url="/2024/loongbsd/norris_openzfs-fsync-zil/">
     <nav id="sidebar" class=""><div id="header-wrapper">
 		<div id="header"><a id="logo" href="https://loongbsd.bitmoe.org/">
   <img src="https://www.freebsd.org/logo/logo-full.png">
@@ -54,17 +54,35 @@
 	<div class="highlightable">
 		<ul class="topics">
 			
-			<li data-uniqueid="1be2bef3997a335bb1ec1978748c9d9f" data-nav-id="/2024/" title="2024" class="dd-item">
+			<li data-uniqueid="1be2bef3997a335bb1ec1978748c9d9f" data-nav-id="/2024/" title="2024" class="dd-item parent ">
 				<a href="/2024/">
-					<i class="fa fa-angle-double-right"></i>
+					<i class="fa fa-angle-double-down"></i>
 					2024
 				</a>
 					<ul class="range-sections">
-						<li data-uniqueid="88f7d7a4d7ea697d76d3fbf8208b0132" data-nav-id="/2024/loongbsd/" title="LoongBSD Group | *BSD 家族软件的 LoongArch 支持项目。" class="dd-item">
+						<li data-uniqueid="88f7d7a4d7ea697d76d3fbf8208b0132" data-nav-id="/2024/loongbsd/" title="LoongBSD Group | *BSD 家族软件的 LoongArch 支持项目。" class="dd-item parent ">
 							<a href="/2024/loongbsd/">
-								<i class="fa fa-angle-double-right"></i>
+								<i class="fa fa-angle-double-down"></i>
 								LoongBSD Group | *BSD 家族软件的 LoongArch 支持项目。
-							</a>
+							</a><ul class="ancestor-range-pages">
+										
+			
+				<li data-uniqueid="02d62e6716446d6f2e65da2264e32e23" data-nav-id="/2024/loongbsd/norris_quiz/" title="quiz: tiny VMs for kernel development" class="dd-item">
+					<a href="/2024/loongbsd/norris_quiz/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 quiz: tiny VMs for kernel development
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="200cad9ffe5233f325e67e0a142426e2" data-nav-id="/2024/loongbsd/norris_openzfs-fsync-zil/" title="Why fsync() on OpenZFS can’t fail, and what happens when it does" class="dd-itemactive">
+					<a href="/2024/loongbsd/norris_openzfs-fsync-zil/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Why fsync() on OpenZFS can’t fail, and what happens when it does
+					</a>
+				</li>
+			
+										</ul>
 						</li>
 						<li data-uniqueid="d65b535bbe37d1e58f90832345a51937" data-nav-id="/2024/eurobsdcon/" title="EuroBSDCon" class="dd-item">
 							<a href="/2024/eurobsdcon/">
@@ -151,7 +169,13 @@
             
           
           
-            <a href='/'>LoongBSD Group Messages</a> > <a href='/author/'>Author</a> > Sheng-Yi Hong
+            
+            
+          
+          
+            <a href='/'>LoongBSD Group Messages</a> > <a href='/2024/'>2024</a> > <a href='/2024/loongbsd/'>LoongBSD Group | *BSD 家族软件的 LoongArch 支持项目。</a> > Why fsync() on OpenZFS can’t fail, and what happens when it does
+          
+         
           
          
           
@@ -180,23 +204,80 @@
           
             <h1>
               
-              Sheng-Yi Hong
+              Why fsync() on OpenZFS can’t fail, and what happens when it does
             </h1>
           
 
         
 
 
-
-
-
-    <ul>
+  
+    <span class="author">
     
-      
-	<li hugo-nav="/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/"><a href="/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/">LLDB FreeBSD Kernel Module Improvement (2024)</a></li>
-      
+  
+    <a href="/author/rob-norris/">Rob Norris</a>
+
     
-    </ul>
+      &lt;<span class="author-email">robn@despairlabs.com</span>&gt;
+    
+    </span>
+  
+
+<p>On OpenZFS, fsync() cannot fail - it will wait until the application’s changes
+are on disk before it returns. If there is a problem, such as a hardware
+failure, that causes the pool to suspend, then it will block until the pool
+returns. This could be seconds, hours, or never, depending on the nature on the
+failure.</p>
+<p>Modern distributed systems can often cope with this type of failure by
+redirecting requests to another node, but they can only do this if fsync()
+returns an error instead of blocking.</p>
+<p>In this talk I describe how OpenZFS implements fsync() and why it blocks when
+the pool fails. I then discuss a series of changes made to make it possible for
+fsync() to return failure - and what it means for applications when it does.</p>
+
+
+
+	
+
+
+<section class="attachments blue">
+	<label>
+		<i class="fa fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	<div class="attachments-files">
+	
+		
+		<li>
+			<a href="/2024/LoongBSD/norris_openzfs-fsync-zil.files/norris_openzfs-fsync-zil_bsdcan-2024_slides.pdf" >
+				norris_openzfs-fsync-zil_bsdcan-2024_slides.pdf
+			</a>
+			(2052 kb)
+		</li>
+	
+	</div>
+</section>
+
+
+
+
+  <div id="youtubeembed" class="large-video">
+    <section class="attachments green">
+	<label>
+		<i class="fa fa-paperclip" aria-hidden="true"></i>
+		Video
+	</label>
+	<div class="attachments-video">
+  	  <div class="video-responsive">
+	    <iframe id="widget2" src="https://www.youtube.com/embed/dfH0I6D9ZAA?&amp;showinfo=0&amp;modestbranding=1&amp;autohide=1&amp;enablejsapi=1&amp;origin=https:%2F%2Fpapers.freebsd.org" allowfullscreen="" frameborder="0" height="360" width="640"></iframe>
+	  </div>
+	</div>
+    </section>
+  </div>
+
+
+
+
 
         
         </div> 
@@ -206,8 +287,10 @@
 
     <div id="navigation">
         
+            <a class="nav nav-prev" href="/2024/loongbsd/norris_quiz/" title="quiz: tiny VMs for kernel development"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/2024/" title="2024" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/2024/eurobsdcon/" title="EuroBSDCon" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

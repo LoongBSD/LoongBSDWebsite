@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LoongBSD Group | *BSD 家族软件的 LoongArch 支持项目。 on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/2024/loongbsd/</link>
+    <description>Recent content in LoongBSD Group | *BSD 家族软件的 LoongArch 支持项目。 on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/2024/loongbsd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quiz: tiny VMs for kernel development</title>
+      <link>https://loongbsd.bitmoe.org/2024/loongbsd/norris_quiz/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/loongbsd/norris_quiz/</guid>
+      <description>&lt;p&gt;At the start of 2023 I traded my 20-year career as a Linux sysadmin for a new&#xA;life as a full time OpenZFS developer. Going great, thanks for asking!&lt;/p&gt;&#xA;&lt;p&gt;Because fast iterative development sucks when you need to wait for a reboot&#xA;after every kernel panic, I wrote quiz, a tool to make fast edit-compile-test&#xA;cycles on kernel code possible. Under the hood it uses QEMU’s “microvm” profile&#xA;and a custom kernel config to boot from cold into the OpenZFS test suite in a&#xA;couple of seconds. Its great, and I use it hundreds of times a day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why fsync() on OpenZFS can’t fail, and what happens when it does</title>
+      <link>https://loongbsd.bitmoe.org/2024/loongbsd/norris_openzfs-fsync-zil/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/loongbsd/norris_openzfs-fsync-zil/</guid>
+      <description>&lt;p&gt;On OpenZFS, fsync() cannot fail - it will wait until the application’s changes&#xA;are on disk before it returns. If there is a problem, such as a hardware&#xA;failure, that causes the pool to suspend, then it will block until the pool&#xA;returns. This could be seconds, hours, or never, depending on the nature on the&#xA;failure.&lt;/p&gt;&#xA;&lt;p&gt;Modern distributed systems can often cope with this type of failure by&#xA;redirecting requests to another node, but they can only do this if fsync()&#xA;returns an error instead of blocking.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
