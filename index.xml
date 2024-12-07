@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/</link>
+    <description>Recent content on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1-800-RC(8)-HELP: Dial Into FreeBSD Service Scripts Mastery!</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</guid>
+      <description>&lt;p&gt;The presentation delves deep into the rc(8) service scripts. We will begin by&#xA;analyzing the service script framework in FreeBSD, which is built around rc(8)&#xA;and rc.subr(8), and take a closer look at some of the most recent additions.&#xA;Next, we will not only discuss common patterns used to implement different&#xA;kinds of service scripts (i.e., the scripts residing in rc.d directories) but&#xA;also examine unusual and complex scripts in detail. Additionally, we will&#xA;explore all the most relevant parts of the rc(8) subsystem, such as rc.conf(8),&#xA;rcorder(8), sysrc(8), and service(8). As a result, you should be able to easily&#xA;design, implement, debug, and maintain FreeBSD service scripts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scheduling Priorities and FreeBSD: A deep dive (and sweep)</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/</guid>
+      <description>&lt;p&gt;In this talk, we will review FreeBSD’s rtprio(2) and POSIX.1b’s scheduling&#xA;interfaces and embark on a journey around FreeBSD’s implementation of scheduling&#xA;priorities. It started with a desire to fix a few apparently simple bugs of&#xA;rtprio(2) and to add some reasonable features and, one thing leading to another,&#xA;became an almost complete rewrite of this system call and the POSIX.1b’s&#xA;interfaces’ implementations, as well as some aspect of the schedulers. We will&#xA;touch on the most interesting problems that the implementation had, in terms of&#xA;POSIX compliance, security and consistency, and then explain how we fixed or are&#xA;fixing them. As of this writing, this project is still a work in progress, with&#xA;about ~30% of the changes being under review. We will report about its status&#xA;during the talk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>State of the FreeBSD Audio Subsystem</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/</guid>
+      <description>&lt;p&gt;This talk goes through the current state of the FreeBSD audio subsystem,&#xA;with a focus on recent Foundation-sponsored work undertaken by the&#xA;presenter during the past months, as part of an effort to modernize&#xA;FreeBSD audio and audio application development. It covers important&#xA;changes and additions, such as the implementation of new userland audio&#xA;development libraries and more user-friendly utilities, as well as&#xA;kernel driver bug fixes and behavior improvements. It also showcases&#xA;some real examples of audio production setups using FreeBSD as their&#xA;operating system of choice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>quiz: tiny VMs for kernel development</title>
+      <link>https://loongbsd.bitmoe.org/2024/bsdcan/norris_quiz/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/bsdcan/norris_quiz/</guid>
+      <description>&lt;p&gt;At the start of 2023 I traded my 20-year career as a Linux sysadmin for a new&#xA;life as a full time OpenZFS developer. Going great, thanks for asking!&lt;/p&gt;&#xA;&lt;p&gt;Because fast iterative development sucks when you need to wait for a reboot&#xA;after every kernel panic, I wrote quiz, a tool to make fast edit-compile-test&#xA;cycles on kernel code possible. Under the hood it uses QEMU’s “microvm” profile&#xA;and a custom kernel config to boot from cold into the OpenZFS test suite in a&#xA;couple of seconds. Its great, and I use it hundreds of times a day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why fsync() on OpenZFS can’t fail, and what happens when it does</title>
+      <link>https://loongbsd.bitmoe.org/2024/bsdcan/norris_openzfs-fsync-zil/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/bsdcan/norris_openzfs-fsync-zil/</guid>
+      <description>&lt;p&gt;On OpenZFS, fsync() cannot fail - it will wait until the application’s changes&#xA;are on disk before it returns. If there is a problem, such as a hardware&#xA;failure, that causes the pool to suspend, then it will block until the pool&#xA;returns. This could be seconds, hours, or never, depending on the nature on the&#xA;failure.&lt;/p&gt;&#xA;&lt;p&gt;Modern distributed systems can often cope with this type of failure by&#xA;redirecting requests to another node, but they can only do this if fsync()&#xA;returns an error instead of blocking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Demon w trampkach, czyli pełne zanurzenie w ekosystem FreeBSD</title>
+      <link>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</guid>
+      <description>&lt;p&gt;FreeBSD jest systemem operacyjnym wywodzącym się w prostej linii z legendarnego&#xA;systemu Unix i jest kontynuacją projektu BSD (pierwszego otwartego systemu&#xA;operacyjnego w historii). W ciągu ponad 30 lat swojego istnienia projekt&#xA;FreeBSD nie tylko rozwiną się technologicznie, ale również wypracował kulturę,&#xA;procesy i struktury, które scalają społeczność i pozwalają na sprawne&#xA;funkcjonowanie projektu tworzonego przez tysiące osób z całego świata.&lt;/p&gt;&#xA;&lt;p&gt;Podczas prelekcji poznamy odpowiedzi na kilka podstawowych pytań ze świata&#xA;FreeBSD. Kto jest kim i jak zostać kimś? Co jest czym i jak się czymś zająć?&#xA;Innymi słowy, skupimy się na takich rzeczach, jak:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLDB FreeBSD Kernel Module Improvement</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/</guid>
+      <description>&lt;p&gt;This paper introduces the low level debugger (LLDB) kernel module debug facility for the FreeBSD kernel.&#xA;The current functional status of LLDB within the FreeBSD kernel is attributed to contributions from contractor and the collaborative efforts of the community.&#xA;Key functionalities include core dump parsing and memory context building for the coredump, specifically integrated into the process plugin within LLDB for the FreeBSD&#xA;kernel. While the implementation of the process plugin has been successfully completed, the paper&#xA;emphasizes the imperative need to implement the DynamicLoader plugin for the kernel loader. This plugin plays a critical&#xA;role in loading the symbol file of the kernel module, ensuring comprehensive parsing of symbols for loadable kernel modules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arbitrary Instruction Tracing with DTrace</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/margiolis-arbitrary-instruction-tracing-with-dtrace/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/margiolis-arbitrary-instruction-tracing-with-dtrace/</guid>
+      <description>&lt;p&gt;This paper presents the high-level ideas behind kinst, a new DTrace provider&#xA;available in FreeBSD, which enables tracing of arbitrary instructions and&#xA;inline functions in the kernel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Benchmarking Performance Overhead of DTrace on FreeBSD and eBPF on Linux</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/</guid>
+      <description>&lt;p&gt;DTrace and eBPF are today’s most potent observ- ability tools available on&#xA;general-purpose operating systems. They empower users to ask random questions&#xA;and receive complex answers about any part of the system. Their performance is&#xA;unmatched by any traditional observability tools.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, their performance characteristics are not well- researched,&#xA;partially because designing a benchmark to measure the measurement tool is&#xA;challenging.&lt;/p&gt;&#xA;&lt;p&gt;In this paper, we learn about the basics of art benchmarking and the importance&#xA;and difficulties of operating system instru- mentation. We review three&#xA;generations of observability tools to understand their design and&#xA;implementation limitations. Finally, we design, implement, and conduct a&#xA;microbenchmark and an application benchmark to peak into the enigmatic domain&#xA;of DTrace and eBPF performance overhead.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/</guid>
+      <description>&lt;p&gt;This paper aims to elucidate the process entailed in crafting a FreeBSD expert system, leveraging the LLM model ChatGPT in tandem with vector databases Furthermore, the design is adaptable to any open-source LLM model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dirty deals: the story of a data corruption bug in OpenZFS</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-dirty-dnodes/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-dirty-dnodes/</guid>
+      <description>&lt;p&gt;In November 2023 a silent data corruption bug was discovered in the recently&#xA;released OpenZFS 2.2.0. The bug was reported, and quickly correlated by the&#xA;community with a new feature, “block cloning”, which even before its release&#xA;had gained a reputation for instability and data loss, to the point of being&#xA;disabled by default in FreeBSD 14. A 2.2.1 release was quickly put together,&#xA;disabling the feature.&lt;/p&gt;&#xA;&lt;p&gt;One of OpenZFS’ key selling points is its ability to detect and correct all&#xA;kinds of data corruption, so news of its apparent failure quickly spread&#xA;through tech news and social media, aided by its somewhat prickly relationship&#xA;with some other parts of the open-source software world. This naturally led to&#xA;a lot of confusion and concern from home and business OpenZFS users alike,&#xA;worried about the integrity of their data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Towards a Robust FreeBSD-Based Cloud: Porting OpenStack Components</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/chang-towards-a-robust-freebsd-based-cloud-porting-openstack-components/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/chang-towards-a-robust-freebsd-based-cloud-porting-openstack-components/</guid>
+      <description>&lt;p&gt;This paper presents a pioneering initiative to integrate OpenStack, an&#xA;open-source cloud computing platform, with FreeBSD, a robust Unix-like operating&#xA;system. Traditionally, OpenStack has been closely associated with Linux-based&#xA;environments, leveraging specific Linux features and technologies. This&#xA;integration aims to expand OpenStack&amp;rsquo;s applicability by harnessing FreeBSD&amp;rsquo;s&#xA;advanced networking, security, and efficient resource management capabilities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why fsync() on OpenZFS can’t fail (and what happens when it does)</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-fsync-failure/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-fsync-failure/</guid>
+      <description>&lt;p&gt;On OpenZFS, fsync() cannot fail - it will wait until the application’s changes&#xA;are on disk before it returns. If there is a problem, such as a hardware&#xA;failure, that causes the pool to suspend, then it may wait forever. This feels&#xA;strange, but is acceptable according to the API contract: fsync() never&#xA;returned success, so the application has no reason to believe its data is on&#xA;disk.&lt;/p&gt;&#xA;&lt;p&gt;However, OpenZFS pools can recover if the fault is repaired, and so fsync() can&#xA;still return. As it turns out though, it’s possible in rare situations for the&#xA;pool to return to service but not have actually put the data on disk. fsync()&#xA;returns success, because it cannot fail, and the application has been lied to.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>rtprio(2) and POSIX(.1b) priorities, and their FreeBSD implementation: A deep dive (and sweep)</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/certner-scheduling_priorities_in_freebsd/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/certner-scheduling_priorities_in_freebsd/</guid>
+      <description>&lt;p&gt;Although UNIX’s descendants or derivatives are not hard real-time operating&#xA;systems, some have support for soft real-time through allowing to assign to&#xA;userland processes higher priorities normally reserved to the system, sometimes&#xA;coupled with preemption of kernel tasks, making them suitable as a fundation of&#xA;soft real-time system. POSIX standardized its first real-time extensions in 1993&#xA;in a document usually referred to as POSIX.1b. At that time, however, some&#xA;operating systems already had support for soft real-time in the form of ad-hoc&#xA;APIs, such as System V Release 4 (SVR4) with its priocntl(2) system call and&#xA;HP/UX with its rtprio(2) one. FreeBSD first adopted its own rtprio(2) system&#xA;call in 1994, largely based on HP/UX’s with extensions such as idle processes.&#xA;POSIX.1b extensions concerning processes were implemented later, in 1998, and&#xA;some preliminary thread support added the next year. Since then, these APIs have&#xA;been present in the system for applications to use.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Union mounts in 4.4BSD-Lite</title>
+      <link>https://loongbsd.bitmoe.org/1995/mckusick-union_mounts/</link>
+      <pubDate>Fri, 01 Dec 1995 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/1995/mckusick-union_mounts/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jan-Simon Pendry, Marshall Kirk McKusick&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;:&#xA;This paper describes the design and rationale behind&#xA;union mounts, a new filesystem-namespace management&#xA;tool available in 4.4BSD-Lite. Unlike a traditional&#xA;mount that hides the contents of the directory on which&#xA;it is placed, a union mount presents a view of a merger&#xA;of the two directories. Although only the filesystem&#xA;at the top of the union stack can be modified, the&#xA;union filesystem gives the appearance of allowing any-&#xA;thing to be deleted or modified. Files in the lower&#xA;layer may be deleted with whiteout in the top layer.&#xA;Files to be modified are automatically copied to the&#xA;top layer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

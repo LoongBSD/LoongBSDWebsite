@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Olivier Certner on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/olivier-certner/</link>
+    <description>Recent content in Olivier Certner on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/olivier-certner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheduling Priorities and FreeBSD: A deep dive (and sweep)</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/</guid>
+      <description>&lt;p&gt;In this talk, we will review FreeBSD’s rtprio(2) and POSIX.1b’s scheduling&#xA;interfaces and embark on a journey around FreeBSD’s implementation of scheduling&#xA;priorities. It started with a desire to fix a few apparently simple bugs of&#xA;rtprio(2) and to add some reasonable features and, one thing leading to another,&#xA;became an almost complete rewrite of this system call and the POSIX.1b’s&#xA;interfaces’ implementations, as well as some aspect of the schedulers. We will&#xA;touch on the most interesting problems that the implementation had, in terms of&#xA;POSIX compliance, security and consistency, and then explain how we fixed or are&#xA;fixing them. As of this writing, this project is still a work in progress, with&#xA;about ~30% of the changes being under review. We will report about its status&#xA;during the talk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>rtprio(2) and POSIX(.1b) priorities, and their FreeBSD implementation: A deep dive (and sweep)</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/certner-scheduling_priorities_in_freebsd/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/certner-scheduling_priorities_in_freebsd/</guid>
+      <description>&lt;p&gt;Although UNIX’s descendants or derivatives are not hard real-time operating&#xA;systems, some have support for soft real-time through allowing to assign to&#xA;userland processes higher priorities normally reserved to the system, sometimes&#xA;coupled with preemption of kernel tasks, making them suitable as a fundation of&#xA;soft real-time system. POSIX standardized its first real-time extensions in 1993&#xA;in a document usually referred to as POSIX.1b. At that time, however, some&#xA;operating systems already had support for soft real-time in the form of ad-hoc&#xA;APIs, such as System V Release 4 (SVR4) with its priocntl(2) system call and&#xA;HP/UX with its rtprio(2) one. FreeBSD first adopted its own rtprio(2) system&#xA;call in 1994, largely based on HP/UX’s with extensions such as idle processes.&#xA;POSIX.1b extensions concerning processes were implemented later, in 1998, and&#xA;some preliminary thread support added the next year. Since then, these APIs have&#xA;been present in the system for applications to use.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

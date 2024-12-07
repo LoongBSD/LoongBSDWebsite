@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christos Margiolis on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/christos-margiolis/</link>
+    <description>Recent content in Christos Margiolis on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/christos-margiolis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>State of the FreeBSD Audio Subsystem</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/</guid>
+      <description>&lt;p&gt;This talk goes through the current state of the FreeBSD audio subsystem,&#xA;with a focus on recent Foundation-sponsored work undertaken by the&#xA;presenter during the past months, as part of an effort to modernize&#xA;FreeBSD audio and audio application development. It covers important&#xA;changes and additions, such as the implementation of new userland audio&#xA;development libraries and more user-friendly utilities, as well as&#xA;kernel driver bug fixes and behavior improvements. It also showcases&#xA;some real examples of audio production setups using FreeBSD as their&#xA;operating system of choice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arbitrary Instruction Tracing with DTrace</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/margiolis-arbitrary-instruction-tracing-with-dtrace/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/margiolis-arbitrary-instruction-tracing-with-dtrace/</guid>
+      <description>&lt;p&gt;This paper presents the high-level ideas behind kinst, a new DTrace provider&#xA;available in FreeBSD, which enables tracing of arbitrary instructions and&#xA;inline functions in the kernel.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

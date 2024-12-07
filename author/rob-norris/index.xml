@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rob Norris on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/rob-norris/</link>
+    <description>Recent content in Rob Norris on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/rob-norris/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quiz: tiny VMs for kernel development</title>
+      <link>https://loongbsd.bitmoe.org/2024/bsdcan/norris_quiz/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/bsdcan/norris_quiz/</guid>
+      <description>&lt;p&gt;At the start of 2023 I traded my 20-year career as a Linux sysadmin for a new&#xA;life as a full time OpenZFS developer. Going great, thanks for asking!&lt;/p&gt;&#xA;&lt;p&gt;Because fast iterative development sucks when you need to wait for a reboot&#xA;after every kernel panic, I wrote quiz, a tool to make fast edit-compile-test&#xA;cycles on kernel code possible. Under the hood it uses QEMU’s “microvm” profile&#xA;and a custom kernel config to boot from cold into the OpenZFS test suite in a&#xA;couple of seconds. Its great, and I use it hundreds of times a day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why fsync() on OpenZFS can’t fail, and what happens when it does</title>
+      <link>https://loongbsd.bitmoe.org/2024/bsdcan/norris_openzfs-fsync-zil/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/bsdcan/norris_openzfs-fsync-zil/</guid>
+      <description>&lt;p&gt;On OpenZFS, fsync() cannot fail - it will wait until the application’s changes&#xA;are on disk before it returns. If there is a problem, such as a hardware&#xA;failure, that causes the pool to suspend, then it will block until the pool&#xA;returns. This could be seconds, hours, or never, depending on the nature on the&#xA;failure.&lt;/p&gt;&#xA;&lt;p&gt;Modern distributed systems can often cope with this type of failure by&#xA;redirecting requests to another node, but they can only do this if fsync()&#xA;returns an error instead of blocking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dirty deals: the story of a data corruption bug in OpenZFS</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-dirty-dnodes/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-dirty-dnodes/</guid>
+      <description>&lt;p&gt;In November 2023 a silent data corruption bug was discovered in the recently&#xA;released OpenZFS 2.2.0. The bug was reported, and quickly correlated by the&#xA;community with a new feature, “block cloning”, which even before its release&#xA;had gained a reputation for instability and data loss, to the point of being&#xA;disabled by default in FreeBSD 14. A 2.2.1 release was quickly put together,&#xA;disabling the feature.&lt;/p&gt;&#xA;&lt;p&gt;One of OpenZFS’ key selling points is its ability to detect and correct all&#xA;kinds of data corruption, so news of its apparent failure quickly spread&#xA;through tech news and social media, aided by its somewhat prickly relationship&#xA;with some other parts of the open-source software world. This naturally led to&#xA;a lot of confusion and concern from home and business OpenZFS users alike,&#xA;worried about the integrity of their data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why fsync() on OpenZFS can’t fail (and what happens when it does)</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-fsync-failure/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/norris_openzfs-fsync-failure/</guid>
+      <description>&lt;p&gt;On OpenZFS, fsync() cannot fail - it will wait until the application’s changes&#xA;are on disk before it returns. If there is a problem, such as a hardware&#xA;failure, that causes the pool to suspend, then it may wait forever. This feels&#xA;strange, but is acceptable according to the API contract: fsync() never&#xA;returned success, so the application has no reason to believe its data is on&#xA;disk.&lt;/p&gt;&#xA;&lt;p&gt;However, OpenZFS pools can recover if the fault is repaired, and so fsync() can&#xA;still return. As it turns out though, it’s possible in rare situations for the&#xA;pool to return to service but not have actually put the data on disk. fsync()&#xA;returns success, because it cannot fail, and the application has been lied to.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

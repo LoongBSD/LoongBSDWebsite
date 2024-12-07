@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>LoongBSD Group Messages :: LoongBSD Group Messages</title>
+    <title>State of the FreeBSD Audio Subsystem :: LoongBSD Group Messages</title>
 
     
     <link href="/css/nucleus.css?1733536977" rel="stylesheet">
@@ -37,7 +37,7 @@
 <link href="/css/papers-custom.css?1733536977" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/">
     <nav id="sidebar" class=""><div id="header-wrapper">
 		<div id="header"><a id="logo" href="https://papers.freebsd.org/">
   <img src="https://www.freebsd.org/logo/logo-full.png">
@@ -54,17 +54,43 @@
 	<div class="highlightable">
 		<ul class="topics">
 			
-			<li data-uniqueid="1be2bef3997a335bb1ec1978748c9d9f" data-nav-id="/2024/" title="2024" class="dd-item">
+			<li data-uniqueid="1be2bef3997a335bb1ec1978748c9d9f" data-nav-id="/2024/" title="2024" class="dd-item parent ">
 				<a href="/2024/">
-					<i class="fa fa-angle-double-right"></i>
+					<i class="fa fa-angle-double-down"></i>
 					2024
 				</a>
 					<ul class="range-sections">
-						<li data-uniqueid="d65b535bbe37d1e58f90832345a51937" data-nav-id="/2024/eurobsdcon/" title="EuroBSDCon" class="dd-item">
+						<li data-uniqueid="d65b535bbe37d1e58f90832345a51937" data-nav-id="/2024/eurobsdcon/" title="EuroBSDCon" class="dd-item parent ">
 							<a href="/2024/eurobsdcon/">
-								<i class="fa fa-angle-double-right"></i>
+								<i class="fa fa-angle-double-down"></i>
 								EuroBSDCon
-							</a>
+							</a><ul class="ancestor-range-pages">
+										
+			
+				<li data-uniqueid="ef305012fb981f9b704b489984890c0d" data-nav-id="/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/" title="1-800-RC(8)-HELP: Dial Into FreeBSD Service Scripts Mastery!" class="dd-item">
+					<a href="/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 1-800-RC(8)-HELP: Dial Into FreeBSD Service Scripts Mastery!
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="65f7ec3d7db751fc7aa07c29aba5052d" data-nav-id="/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/" title="Scheduling Priorities and FreeBSD: A deep dive (and sweep)" class="dd-item">
+					<a href="/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Scheduling Priorities and FreeBSD: A deep dive (and sweep)
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="4d1a387b4d13eeb1bf8b0a5cb8680b3b" data-nav-id="/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/" title="State of the FreeBSD Audio Subsystem" class="dd-itemactive">
+					<a href="/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 State of the FreeBSD Audio Subsystem
+					</a>
+				</li>
+			
+										</ul>
 						</li>
 						<li data-uniqueid="d6cc7656edf8cc426faa33e9e77a91cb" data-nav-id="/2024/bsdcan/" title="BSDCan" class="dd-item">
 							<a href="/2024/bsdcan/">
@@ -132,47 +158,127 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>LoongBSD Group Messages</a> > <a href='/2024/'>2024</a> > <a href='/2024/eurobsdcon/'>EuroBSDCon</a> > State of the FreeBSD Audio Subsystem
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              State of the FreeBSD Audio Subsystem
+            </h1>
+          
 
         
 
 
-<span id="sidebar-toggle-span">
-  <a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
+  
+    <span class="author">
+    
+  
+    <a href="/author/christos-margiolis/">Christos Margiolis</a>
 
-    <main aria-role="main">
-      <header class="homepage-header">
-        <h1>LoongBSD Group Messages</h1>
-        
-        <span class="subtitle">Hello LoongBSD!</span>
-        
-      </header>
-      <div class="homepage-content">
-        
-        
-      </div>
-      <div>
-        
-	<ul>
+    
+    </span>
+  
+
+<p>This talk goes through the current state of the FreeBSD audio subsystem,
+with a focus on recent Foundation-sponsored work undertaken by the
+presenter during the past months, as part of an effort to modernize
+FreeBSD audio and audio application development. It covers important
+changes and additions, such as the implementation of new userland audio
+development libraries and more user-friendly utilities, as well as
+kernel driver bug fixes and behavior improvements. It also showcases
+some real examples of audio production setups using FreeBSD as their
+operating system of choice.</p>
+
+
+
 	
-        
-          <li>
-		<a href="/2024/">2024</a>
-          </li>
+
+
+<section class="attachments blue">
+	<label>
+		<i class="fa fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	<div class="attachments-files">
 	
-          <li>
-		<a href="/1995/">1995</a>
-          </li>
+		
+		<li>
+			<a href="/2024/eurobsdcon/christos-State-of-the-FreeBSD-Audio-Subsystem.files/christos-State-of-the-FreeBSD-Audio-Subsystem-slides.pdf" >
+				christos-State-of-the-FreeBSD-Audio-Subsystem-slides.pdf
+			</a>
+			(3463 kb)
+		</li>
 	
-	</ul>
-      </div>
-    </main>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
         
         </div> 
@@ -182,8 +288,10 @@
 
     <div id="navigation">
         
+            <a class="nav nav-prev" href="/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/" title="Scheduling Priorities and FreeBSD: A deep dive (and sweep)"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/2024/" title="2024" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/2024/bsdcan/" title="BSDCan" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

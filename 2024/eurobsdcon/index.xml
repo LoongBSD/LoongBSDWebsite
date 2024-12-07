@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EuroBSDCon on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/</link>
+    <description>Recent content in EuroBSDCon on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/2024/eurobsdcon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1-800-RC(8)-HELP: Dial Into FreeBSD Service Scripts Mastery!</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</guid>
+      <description>&lt;p&gt;The presentation delves deep into the rc(8) service scripts. We will begin by&#xA;analyzing the service script framework in FreeBSD, which is built around rc(8)&#xA;and rc.subr(8), and take a closer look at some of the most recent additions.&#xA;Next, we will not only discuss common patterns used to implement different&#xA;kinds of service scripts (i.e., the scripts residing in rc.d directories) but&#xA;also examine unusual and complex scripts in detail. Additionally, we will&#xA;explore all the most relevant parts of the rc(8) subsystem, such as rc.conf(8),&#xA;rcorder(8), sysrc(8), and service(8). As a result, you should be able to easily&#xA;design, implement, debug, and maintain FreeBSD service scripts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scheduling Priorities and FreeBSD: A deep dive (and sweep)</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/certner-scheduling_priorities_and_freebsd/</guid>
+      <description>&lt;p&gt;In this talk, we will review FreeBSD’s rtprio(2) and POSIX.1b’s scheduling&#xA;interfaces and embark on a journey around FreeBSD’s implementation of scheduling&#xA;priorities. It started with a desire to fix a few apparently simple bugs of&#xA;rtprio(2) and to add some reasonable features and, one thing leading to another,&#xA;became an almost complete rewrite of this system call and the POSIX.1b’s&#xA;interfaces’ implementations, as well as some aspect of the schedulers. We will&#xA;touch on the most interesting problems that the implementation had, in terms of&#xA;POSIX compliance, security and consistency, and then explain how we fixed or are&#xA;fixing them. As of this writing, this project is still a work in progress, with&#xA;about ~30% of the changes being under review. We will report about its status&#xA;during the talk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>State of the FreeBSD Audio Subsystem</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/christos-state-of-the-freebsd-audio-subsystem/</guid>
+      <description>&lt;p&gt;This talk goes through the current state of the FreeBSD audio subsystem,&#xA;with a focus on recent Foundation-sponsored work undertaken by the&#xA;presenter during the past months, as part of an effort to modernize&#xA;FreeBSD audio and audio application development. It covers important&#xA;changes and additions, such as the implementation of new userland audio&#xA;development libraries and more user-friendly utilities, as well as&#xA;kernel driver bug fixes and behavior improvements. It also showcases&#xA;some real examples of audio production setups using FreeBSD as their&#xA;operating system of choice.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

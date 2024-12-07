@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marshall Kirk McKusick on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/marshall-kirk-mckusick/</link>
+    <description>Recent content in Marshall Kirk McKusick on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Dec 1995 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/marshall-kirk-mckusick/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Union mounts in 4.4BSD-Lite</title>
+      <link>https://loongbsd.bitmoe.org/1995/mckusick-union_mounts/</link>
+      <pubDate>Fri, 01 Dec 1995 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/1995/mckusick-union_mounts/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jan-Simon Pendry, Marshall Kirk McKusick&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;:&#xA;This paper describes the design and rationale behind&#xA;union mounts, a new filesystem-namespace management&#xA;tool available in 4.4BSD-Lite. Unlike a traditional&#xA;mount that hides the contents of the directory on which&#xA;it is placed, a union mount presents a view of a merger&#xA;of the two directories. Although only the filesystem&#xA;at the top of the union stack can be modified, the&#xA;union filesystem gives the appearance of allowing any-&#xA;thing to be deleted or modified. Files in the lower&#xA;layer may be deleted with whiteout in the top layer.&#xA;Files to be modified are automatically copied to the&#xA;top layer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

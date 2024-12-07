@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chih-Hsin Chang on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/chih-hsin-chang/</link>
+    <description>Recent content in Chih-Hsin Chang on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/chih-hsin-chang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Towards a Robust FreeBSD-Based Cloud: Porting OpenStack Components</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/chang-towards-a-robust-freebsd-based-cloud-porting-openstack-components/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/chang-towards-a-robust-freebsd-based-cloud-porting-openstack-components/</guid>
+      <description>&lt;p&gt;This paper presents a pioneering initiative to integrate OpenStack, an&#xA;open-source cloud computing platform, with FreeBSD, a robust Unix-like operating&#xA;system. Traditionally, OpenStack has been closely associated with Linux-based&#xA;environments, leveraging specific Linux features and technologies. This&#xA;integration aims to expand OpenStack&amp;rsquo;s applicability by harnessing FreeBSD&amp;rsquo;s&#xA;advanced networking, security, and efficient resource management capabilities.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

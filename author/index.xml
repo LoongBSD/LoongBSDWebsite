@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/</link>
+    <description>Recent content in Author on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mateusz Piotrowski</title>
+      <link>https://loongbsd.bitmoe.org/author/mateusz-piotrowski/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/mateusz-piotrowski/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Olivier Certner</title>
+      <link>https://loongbsd.bitmoe.org/author/olivier-certner/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/olivier-certner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Christos Margiolis</title>
+      <link>https://loongbsd.bitmoe.org/author/christos-margiolis/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/christos-margiolis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rob Norris</title>
+      <link>https://loongbsd.bitmoe.org/author/rob-norris/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/rob-norris/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sheng-Yi Hong</title>
+      <link>https://loongbsd.bitmoe.org/author/sheng-yi-hong/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/sheng-yi-hong/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yan-Hao Wang</title>
+      <link>https://loongbsd.bitmoe.org/author/yan-hao-wang/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/yan-hao-wang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chih-Hsin Chang</title>
+      <link>https://loongbsd.bitmoe.org/author/chih-hsin-chang/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/chih-hsin-chang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marshall Kirk McKusick</title>
+      <link>https://loongbsd.bitmoe.org/author/marshall-kirk-mckusick/</link>
+      <pubDate>Fri, 01 Dec 1995 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/author/marshall-kirk-mckusick/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

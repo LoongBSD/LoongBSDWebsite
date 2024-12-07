@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.139.3">
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System :: LoongBSD Group Messages</title>
+
+    
+    <link href="/css/nucleus.css?1733536977" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733536977" rel="stylesheet">
+    <link href="/css/hybrid.css?1733536977" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733536977" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733536977" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733536977" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733536977" rel="stylesheet">
+    <link href="/css/theme.css?1733536977" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733536977" rel="stylesheet">
+    
+      <link href="/css/theme-red.css?1733536977" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1733536977"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<link href="/css/papers-custom.css?1733536977" rel="stylesheet">
+
+  </head>
+  <body class="" data-url="/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/">
+    <nav id="sidebar" class=""><div id="header-wrapper">
+		<div id="header"><a id="logo" href="https://papers.freebsd.org/">
+  <img src="https://www.freebsd.org/logo/logo-full.png">
+</a>
+</div><div class="searchbox">
+    <form method="get" action="https://duckduckgo.com/" onsubmit="document.getElementById('search-by').value+=' site: papers.FreeBSD.org'">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input id="search-by" type="search" name="q" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+    </form>
+</div>
+</div>
+
+	<div class="highlightable">
+		<ul class="topics">
+			
+			<li data-uniqueid="1be2bef3997a335bb1ec1978748c9d9f" data-nav-id="/2024/" title="2024" class="dd-item parent ">
+				<a href="/2024/">
+					<i class="fa fa-angle-double-down"></i>
+					2024
+				</a>
+					<ul class="range-sections">
+						<li data-uniqueid="d65b535bbe37d1e58f90832345a51937" data-nav-id="/2024/eurobsdcon/" title="EuroBSDCon" class="dd-item">
+							<a href="/2024/eurobsdcon/">
+								<i class="fa fa-angle-double-right"></i>
+								EuroBSDCon
+							</a>
+						</li>
+						<li data-uniqueid="d6cc7656edf8cc426faa33e9e77a91cb" data-nav-id="/2024/bsdcan/" title="BSDCan" class="dd-item">
+							<a href="/2024/bsdcan/">
+								<i class="fa fa-angle-double-right"></i>
+								BSDCan
+							</a>
+						</li>
+						<li data-uniqueid="bc7f95e704d6945d5a52d0abc0e57fa6" data-nav-id="/2024/asiabsdcon/" title="AsiaBSDCon" class="dd-item parent ">
+							<a href="/2024/asiabsdcon/">
+								<i class="fa fa-angle-double-down"></i>
+								AsiaBSDCon
+							</a><ul class="ancestor-range-pages">
+										
+			
+				<li data-uniqueid="7312282a3479429e7758c35c75119bcf" data-nav-id="/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/" title="LLDB FreeBSD Kernel Module Improvement" class="dd-item">
+					<a href="/2024/asiabsdcon/hong-lldb-freebsd-kernel-module-improvement/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 LLDB FreeBSD Kernel Module Improvement
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="5dd8144300f56a570905088affe33ce4" data-nav-id="/2024/asiabsdcon/margiolis-arbitrary-instruction-tracing-with-dtrace/" title="Arbitrary Instruction Tracing with DTrace" class="dd-item">
+					<a href="/2024/asiabsdcon/margiolis-arbitrary-instruction-tracing-with-dtrace/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Arbitrary Instruction Tracing with DTrace
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="9c5e979399912f862f130b9ca9c3021d" data-nav-id="/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/" title="Benchmarking Performance Overhead of DTrace on FreeBSD and eBPF on Linux" class="dd-item">
+					<a href="/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Benchmarking Performance Overhead of DTrace on FreeBSD and eBPF on Linux
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="32148723232b0a0f1996ad4fd30539c2" data-nav-id="/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/" title="Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System" class="dd-itemactive">
+					<a href="/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="88400acb1cae66ad7cbcce06ffc567b8" data-nav-id="/2024/asiabsdcon/norris_openzfs-dirty-dnodes/" title="Dirty deals: the story of a data corruption bug in OpenZFS" class="dd-item">
+					<a href="/2024/asiabsdcon/norris_openzfs-dirty-dnodes/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Dirty deals: the story of a data corruption bug in OpenZFS
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="e8182b3cc8532185e3fe6b73754c88f2" data-nav-id="/2024/asiabsdcon/chang-towards-a-robust-freebsd-based-cloud-porting-openstack-components/" title="Towards a Robust FreeBSD-Based Cloud: Porting OpenStack Components" class="dd-item">
+					<a href="/2024/asiabsdcon/chang-towards-a-robust-freebsd-based-cloud-porting-openstack-components/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Towards a Robust FreeBSD-Based Cloud: Porting OpenStack Components
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="1238e46563cfc4e22dfd56b1d49e69fe" data-nav-id="/2024/asiabsdcon/norris_openzfs-fsync-failure/" title="Why fsync() on OpenZFS can’t fail (and what happens when it does)" class="dd-item">
+					<a href="/2024/asiabsdcon/norris_openzfs-fsync-failure/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Why fsync() on OpenZFS can’t fail (and what happens when it does)
+					</a>
+				</li>
+			
+			
+				<li data-uniqueid="06419b9dea043f940dfbf804d095f7fb" data-nav-id="/2024/asiabsdcon/certner-scheduling_priorities_in_freebsd/" title="rtprio(2) and POSIX(.1b) priorities, and their FreeBSD implementation: A deep dive (and sweep)" class="dd-item">
+					<a href="/2024/asiabsdcon/certner-scheduling_priorities_in_freebsd/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 rtprio(2) and POSIX(.1b) priorities, and their FreeBSD implementation: A deep dive (and sweep)
+					</a>
+				</li>
+			
+										</ul>
+						</li>
+			
+				<li data-uniqueid="453b9ffcab5402f78c3e70a818e891fb" data-nav-id="/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/" title="Demon w trampkach, czyli pełne zanurzenie w ekosystem FreeBSD" class="dd-item">
+					<a href="/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Demon w trampkach, czyli pełne zanurzenie w ekosystem FreeBSD
+					</a>
+				</li>
+			
+					</ul>
+			</li>
+		
+			
+			<li data-uniqueid="acf80c6dd5a7517f577fe76dc4a43999" data-nav-id="/1995/" title="1995" class="dd-item">
+				<a href="/1995/">
+					<i class="fa fa-angle-double-right"></i>
+					1995
+				</a>
+					<ul class="range-sections">
+			
+				<li data-uniqueid="0e5e82c6db132d29f99b75c3b3e981e4" data-nav-id="/1995/mckusick-union_mounts/" title="Union mounts in 4.4BSD-Lite" class="dd-item">
+					<a href="/1995/mckusick-union_mounts/">
+						<i class="fa fa-angle-right papers-menu-item"></i>
+						 Union mounts in 4.4BSD-Lite
+					</a>
+				</li>
+			
+					</ul>
+			</li>
+		
+			
+		</ul>
+		
+<ul class="topics">
+	<li class="dd-item">
+		<a href="/author">
+			<i class="fa fa-angle-double-right"></i>
+			Author Index
+		</a>
+	</li>
+</ul>
+
+
+		<section id="footer">
+		</section>
+	</div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>LoongBSD Group Messages</a> > <a href='/2024/'>2024</a> > <a href='/2024/asiabsdcon/'>AsiaBSDCon</a> > Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System
+            </h1>
+          
+
+        
+
+
+  
+    <span class="author">
+    
+  
+    <a href="/author/yan-hao-wang/">Yan-Hao Wang</a>
+
+    
+      &lt;<span class="author-email">bses30074@gmail.com</span>&gt;
+    
+    </span>
+  
+
+<p>This paper aims to elucidate the process entailed in crafting a FreeBSD expert system, leveraging the LLM model ChatGPT in tandem with vector databases Furthermore, the design is adaptable to any open-source LLM model.</p>
+
+
+
+	
+
+
+<section class="attachments blue">
+	<label>
+		<i class="fa fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	<div class="attachments-files">
+	
+		
+		<li>
+			<a href="/2024/asiabsdcon/wang-Leveraging-the-Power-of-ChatGPT-and-Vector-Databases-in-the-FreeBSD-Expert-System.files/wang-Leveraging-the-Power-of-ChatGPT-and-Vector-Databases-in-the-FreeBSD-Expert-System-paper.pdf" >
+				wang-Leveraging-the-Power-of-ChatGPT-and-Vector-Databases-in-the-FreeBSD-Expert-System-paper.pdf
+			</a>
+			(355 kb)
+		</li>
+	
+		
+		<li>
+			<a href="/2024/asiabsdcon/wang-Leveraging-the-Power-of-ChatGPT-and-Vector-Databases-in-the-FreeBSD-Expert-System.files/wang-Leveraging-the-Power-of-ChatGPT-and-Vector-Databases-in-the-FreeBSD-Expert-System-slides.pdf" >
+				wang-Leveraging-the-Power-of-ChatGPT-and-Vector-Databases-in-the-FreeBSD-Expert-System-slides.pdf
+			</a>
+			(827 kb)
+		</li>
+	
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+            <a class="nav nav-prev" href="/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/" title="Benchmarking Performance Overhead of DTrace on FreeBSD and eBPF on Linux"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/2024/asiabsdcon/norris_openzfs-dirty-dnodes/" title="Dirty deals: the story of a data corruption bug in OpenZFS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1733536977"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733536977"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733536977"></script>
+    <script src="/js/jquery.sticky.js?1733536977"></script>
+    <script src="/js/featherlight.min.js?1733536977"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1733536977"></script>
+    <script src="/js/highlight.pack.js?1733536977"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1733536977"></script>
+    <script src="/js/learn.js?1733536977"></script>
+    <script src="/js/hugo-learn.js?1733536977"></script>
+
+    <link href="/mermaid/mermaid.css?1733536977" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733536977"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

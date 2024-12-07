@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yan-Hao Wang on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/yan-hao-wang/</link>
+    <description>Recent content in Yan-Hao Wang on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/yan-hao-wang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leveraging the Power of ChatGPT and Vector Databases in the FreeBSD Expert System</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/wang-leveraging-the-power-of-chatgpt-and-vector-databases-in-the-freebsd-expert-system/</guid>
+      <description>&lt;p&gt;This paper aims to elucidate the process entailed in crafting a FreeBSD expert system, leveraging the LLM model ChatGPT in tandem with vector databases Furthermore, the design is adaptable to any open-source LLM model.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

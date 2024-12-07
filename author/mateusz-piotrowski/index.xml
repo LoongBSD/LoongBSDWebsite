@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mateusz Piotrowski on LoongBSD Group Messages</title>
+    <link>https://loongbsd.bitmoe.org/author/mateusz-piotrowski/</link>
+    <description>Recent content in Mateusz Piotrowski on LoongBSD Group Messages</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://loongbsd.bitmoe.org/author/mateusz-piotrowski/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1-800-RC(8)-HELP: Dial Into FreeBSD Service Scripts Mastery!</title>
+      <link>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/eurobsdcon/piotrowski-1-800-rc-8-help-dial-into-freebsd-service-scripts-mastery/</guid>
+      <description>&lt;p&gt;The presentation delves deep into the rc(8) service scripts. We will begin by&#xA;analyzing the service script framework in FreeBSD, which is built around rc(8)&#xA;and rc.subr(8), and take a closer look at some of the most recent additions.&#xA;Next, we will not only discuss common patterns used to implement different&#xA;kinds of service scripts (i.e., the scripts residing in rc.d directories) but&#xA;also examine unusual and complex scripts in detail. Additionally, we will&#xA;explore all the most relevant parts of the rc(8) subsystem, such as rc.conf(8),&#xA;rcorder(8), sysrc(8), and service(8). As a result, you should be able to easily&#xA;design, implement, debug, and maintain FreeBSD service scripts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Demon w trampkach, czyli pełne zanurzenie w ekosystem FreeBSD</title>
+      <link>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/piotrowski-demon-w-trampkach-czyli-pelne-zanurzenie-w-ekosystem-freebsd/</guid>
+      <description>&lt;p&gt;FreeBSD jest systemem operacyjnym wywodzącym się w prostej linii z legendarnego&#xA;systemu Unix i jest kontynuacją projektu BSD (pierwszego otwartego systemu&#xA;operacyjnego w historii). W ciągu ponad 30 lat swojego istnienia projekt&#xA;FreeBSD nie tylko rozwiną się technologicznie, ale również wypracował kulturę,&#xA;procesy i struktury, które scalają społeczność i pozwalają na sprawne&#xA;funkcjonowanie projektu tworzonego przez tysiące osób z całego świata.&lt;/p&gt;&#xA;&lt;p&gt;Podczas prelekcji poznamy odpowiedzi na kilka podstawowych pytań ze świata&#xA;FreeBSD. Kto jest kim i jak zostać kimś? Co jest czym i jak się czymś zająć?&#xA;Innymi słowy, skupimy się na takich rzeczach, jak:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Benchmarking Performance Overhead of DTrace on FreeBSD and eBPF on Linux</title>
+      <link>https://loongbsd.bitmoe.org/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://loongbsd.bitmoe.org/2024/asiabsdcon/piotrowski-benchmarking-performance-overhead-of-dtrace-on-freebsd-and-ebpf-on-linux/</guid>
+      <description>&lt;p&gt;DTrace and eBPF are today’s most potent observ- ability tools available on&#xA;general-purpose operating systems. They empower users to ask random questions&#xA;and receive complex answers about any part of the system. Their performance is&#xA;unmatched by any traditional observability tools.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, their performance characteristics are not well- researched,&#xA;partially because designing a benchmark to measure the measurement tool is&#xA;challenging.&lt;/p&gt;&#xA;&lt;p&gt;In this paper, we learn about the basics of art benchmarking and the importance&#xA;and difficulties of operating system instru- mentation. We review three&#xA;generations of observability tools to understand their design and&#xA;implementation limitations. Finally, we design, implement, and conduct a&#xA;microbenchmark and an application benchmark to peak into the enigmatic domain&#xA;of DTrace and eBPF performance overhead.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
